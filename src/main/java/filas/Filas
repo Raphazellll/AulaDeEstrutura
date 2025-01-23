@@ -1,0 +1,54 @@
+
+FIFO
+First in First Out
+O primeiro elemento que entra é o primeiro a sair.
+
+Fila em Java
+
+Uma fila em Java é uma estrutura de dados que segue o modelo FIFO (First In, First Out).
+Em outras palavras, o primeiro elemento a entrar na fila é o primeiro a ser retirado.
+Java possui duas implementações principais de filas: a fila comum (Queue) e a fila de prioridade (PriorityQueue).
+
+A fila comum é uma implementação simples de uma fila, onde os elementos são adicionados ao final da fila e removidos do início.
+Já a fila de prioridade organiza os elementos em ordem de prioridade, onde o elemento com a maior prioridade é o primeiro a ser retirado da fila.
+A fila de prioridade é muito útil em situações em que precisamos processar elementos com diferentes prioridades.
+
+Métodos:
+.enqueue() == ENFILEIRAR
+
+Fila Java: enqueue()
+O método . enqueue() da classe Java Queue é usado para adicionar novos dados à fila.
+Ele recebe um único argumento, data, que é adicionado ao final da fila usando o método LinkedList .
+
+EXEMPLOS
+enqueue(3) insere o número 3 na fila
+Outros métodos da classe Queue
+dequeue() remove e retorna o elemento no início da fila
+front() retorna o elemento no início da fila sem removê-lo
+isEmpty() verifica se a fila está vazia
+isFull() verifica se a fila está cheia
+A fila é uma estrutura de dados que segue a ordem de inserção First In First Out (FIFO).
+
+.dequeue() == DESENFILEIRAR
+
+O método dequeue() em Java remove o elemento da cabeça de uma fila e retorna os dados.
+O método dequeue() é usado na classe Java Queue.
+
+COMO FUNCIONA
+O método dequeue() usa o método removeHead() da classe LinkedList para remover o cabeçalho da fila.
+O método dequeue() diminui o tamanho da fila.
+O método dequeue() lança um erro se a fila estiver vazia.
+O método auxiliar isEmpty() verifica se a fila está vazia.
+
+ONDE É USADO
+O método dequeue() é usado para implementar estruturas de dados como filas, pilhas ou listas.
+O método dequeue() também pode ser usado para implementar filas de prioridade.
+O método dequeue() pode ser usado para implementar recursos de desfazer ou histórico.
+
+O que é Deque?
+Deque é uma interface em Java que fornece suporte a um array redimensionável.
+Deque é uma abreviação de "double ended queue".
+
+.isEmpty   == TESTAR SE ESTÁ VAZIO
+
+==================================================================
