@@ -1,0 +1,109 @@
+LIFO
+* Last in First Out
+* O último elemento que entra é o primeiro a sair
+
+
+MÉTODO POP
+
+pop() em Java é usado para retirar um elemento da pilha. O elemento é retirado do topo da pilha e removido da mesma.
+Parâmetros: O método não aceita nenhum parâmetro.
+Valor de retorno: Este método retorna o elemento presente no topo da pilha e depois o remove.
+
+Parâmetros: O método não aceita nenhum parâmetro.
+Valor de Retorno: Este método retorna o elemento presente no topo da pilha e então o remove.
+Exceções: O método lança EmptyStackException é lançado se a pilha estiver vazia.
+Os programas abaixo ilustram o método Java.util.Stack.pop():
+Programa 1:
+
+import java.util.*;
+
+public class StackDemo {
+    public static void main(String args[])
+    {
+        // Creating an empty Stack
+        Stack<String> STACK = new Stack<String>();
+
+        // Use add() method to add elements
+        STACK.push("Welcome");
+        STACK.push("To");
+        STACK.push("Geeks");
+        STACK.push("For");
+        STACK.push("Geeks");
+
+        // Displaying the Stack
+        System.out.println("Initial Stack: " + STACK);
+
+        // Removing elements using pop() method
+        System.out.println("Popped element: " +
+                                         STACK.pop());
+        System.out.println("Popped element: " +
+                                         STACK.pop());
+
+        // Displaying the Stack after pop operation
+        System.out.println("Stack after pop operation "
+                                             + STACK);
+    }
+}
+
+
+MÉTODO PUSH
+
+O método push() adiciona um ou mais elementos ao final de um array e retorna o novo comprimento desse array.
+
+O método push adiciona valores a um array.
+
+Esse método é intencionalmente genérico. Podendo ser utilizado por call() ou apply() em objetos que implementam arrays.
+O método push depende da propriedade length para determinar onde começar a inserir os valores. Caso a propriedade length não possa ser convertida em número,
+é utilizado 0 como índice. Isto inclui a possibilidade de length não existir, nesse caso, essa propriedade será criada.
+Os únicos objetos que implementam nativamente array são as strings, porém elas não são adequadas para a aplicação desse método, pois são imutáveis.
+
+EXEMPLOS
+
+Exemplo: Adicionando elementos a um array
+O seguinte código cria um array esportes que contém dois elementos. Então adiciona dois elementos a ele. A variável total contém o novo comprimento do array.
+
+var esportes = ["futebol", "beisebol"];
+var total = esportes.push("handebol", "natacao");
+
+console.log(esportes); // ['futebol, 'beisebol', 'handebol', 'natacao']
+console.log(total); // 4
+
+=================================================================================
+Exemplo: Fusão de dois arrays
+Este exemplo utiliza apply() para adicionar todos os elementos de um segundo array.
+
+
+var vegetais = ["cenoura", "batata"];
+var maisVegetais = ["aipo", "beterraba"];
+
+// Adiciona o segundo array no primeiro
+// Equivalente a vegetais.push('aipo', 'beterraba');
+Array.prototype.push.apply(vegetais, maisVegetais);
+
+console.log(vegetais); // ['cenoura', 'batata', 'aipo', 'beterraba']
+
+=================================================================================
+
+
+MÉTODO isEmpty
+
+O método isEmpty() do Java é uma função que verifica se uma string está vazia, ou seja, se
+não contém caracteres. Ele é parte da classe String, que é essencial para manipular strings.
+O método isEmpty() é útil para gerenciar operações de string,
+especialmente em cenários que envolvem validação de entrada do usuário e processamento de dados.
+
+
+Sintaxe do Método
+booleano isEmpty()
+
+Parâmetro: Não aceita nenhum parâmetro.
+Tipo de Retorno: Retorna True se a lista não tiver elementos, senão retorna false. O tipo de retorno é do tipo de dado boolean.
+Erros e exceções: Este método não tem erros ou exceções
+
+EXEMPLO
+
+public boolean isEmpty(){
+    if(refNo == null){
+    return true;
+    }
+}

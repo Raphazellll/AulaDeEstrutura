@@ -1,12 +1,12 @@
 package com.projeto.atribuicaoreferencia;
 
-public class No<T> {
+public class Noo<T> {
 
    private T conteudo;
-   private No<T> proximoNo;
+   private Noo<T> proximoNoo;
 
-   public No(String conteudo) {
-       this.proximoNo = null;
+   public Noo(String conteudo) {
+       this.proximoNoo = null;
        this.conteudo = (T) conteudo;
    }
 
@@ -18,12 +18,12 @@ public class No<T> {
         this.conteudo = conteudo;
     }
 
-    public No<T> getProximoNo() {
-        return proximoNo;
+    public Noo<T> getProximoNo() {
+        return proximoNoo;
     }
 
-    public void setProximoNo(No<T> proximoNo) {
-        this.proximoNo = proximoNo;
+    public void setProximoNo(Noo<T> proximoNoo) {
+        this.proximoNoo = proximoNoo;
     }
 
     @Override

@@ -4,25 +4,25 @@ public class main {
 
     public static void main(String[] args) {
 
-       No<String> no1 = new No<String>("Conteúdo no1");
+       Noo<String> noo1 = new Noo<String>("Conteúdo no1");
 
-       No<String> no2 = new No<String>("Conteúdo no2");
+       Noo<String> noo2 = new Noo<String>("Conteúdo no2");
 
-       no1.setProximoNo(no2);
+       noo1.setProximoNo(noo2);
 
-       No<String> no3 = new No<String>("Conteúdo no3");
+       Noo<String> noo3 = new Noo<String>("Conteúdo no3");
 
-       no2.setProximoNo(no3);
+       noo2.setProximoNo(noo3);
 
-       No<String> no4 = new No<String>("Conteúdo no4");
+       Noo<String> noo4 = new Noo<String>("Conteúdo no4");
 
-       no3.setProximoNo(no4);
+       noo3.setProximoNo(noo4);
 
 
-    System.out.println(no1);
-    System.out.println(no1.getProximoNo());
-    System.out.println(no2);
-    System.out.println(no2.getProximoNo());
+    System.out.println(noo1);
+    System.out.println(noo1.getProximoNo());
+    System.out.println(noo2);
+    System.out.println(noo2.getProximoNo());
 
 
     //no1 -> no2 -> no3 -> no4 -> null
