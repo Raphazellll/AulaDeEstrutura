@@ -1,0 +1,46 @@
+
+UNKNOWN WILDCARD
+
+Como você não sabe o tipo do objeto, você deve tratá-lo da forma mais genérica possível.
+Veja o exemplo abaixo do uso deste Wildcard.
+
+public void imprimeLista(list<?>lista) {[
+for(Object obj : lista) {
+    System.out.println(obj);
+   }
+ }
+ List<Aluno> minhaLista = new List<Aluno>();
+ imprimeLista(minhaLista);
+
+
+UPPERBOUNDED WILDCARD
+
+public void imprimeLista(list<?> extends Pessoa> listaPessoas){
+for(Pessoa p: listaPessoas) {
+    System.out.println(p);
+   }
+ }
+ List<Aluno> minhaLista = new List<Aluno>();
+ imprimeLista(minhaLista);
+
+
+ LOWERBOUNDED WILDCARD
+
+ public void imprimeLista(List<? super Pessoa> listaPessoa){
+    for(Pessoa p: listaPessoas) {
+    System.out.println(p);
+    }
+ }
+  List<Aluno> minhaLista = new List<Aluno>();
+  imprimeLista(minhaLista);
+
+
+=========================================================================
+
+CONVENÇÃO
+
+* K para "KEY". Exemplo: Map<K,V>
+* V para "VALUE". Exemplo: Map<K,V>
+* E para "ELEMENT". Exemplo: List<E>
+* T para "TYPE". Exemplo: Collections#addAll
+* ? Quando Genérico.
